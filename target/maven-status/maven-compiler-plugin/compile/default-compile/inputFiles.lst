@@ -1,2 +1,7 @@
-C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\Task.java
-C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\StatusTask.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\Main.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\config\DatabaseConfigs.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\repository\TaskRepository.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\model\Task.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\service\TaskService.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\config\Database.java
+C:\Users\cbbat\Documents\Estudos\kanban-template\src\main\java\br\com\kanban\model\StatusTask.java

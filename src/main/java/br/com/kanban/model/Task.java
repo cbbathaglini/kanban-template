@@ -1,14 +1,27 @@
 package br.com.kanban.model;
 
 public class Task {
+
+    private Integer id;
     private StatusTask statusTaskEnum;
     private String name;
 
+    public  Task(){
+    }
+    public Task(Integer id, String name, StatusTask statusTask){
+        this.id = id;
+        this.name = name;
+        this.statusTaskEnum = statusTask;
+    }
     public Task(String name){
+        this.id = null;
         this.name = name;
         this.statusTaskEnum = StatusTask.PARA_FAZER;
     }
 
+    public Integer getId(){
+        return this.id;
+    }
     public String getName(){
         return this.name;
     }
@@ -26,19 +39,15 @@ public class Task {
     }
 
     public void avancarStatus(){
-        if(this.statusTaskEnum == StatusTask.PARA_FAZER) this.statusTaskEnum = StatusTask.TRABALHANDO;
-        else if(this.statusTaskEnum == StatusTask.TRABALHANDO) this.statusTaskEnum = StatusTask.ESPERANDO;
-        else this.statusTaskEnum = StatusTask.FEITO;
+        this.statusTaskEnum = StatusTask.avancar(this.statusTaskEnum);
     }
 
     public void regredirStatus(){
-        if(this.statusTaskEnum == StatusTask.TRABALHANDO) this.statusTaskEnum = StatusTask.PARA_FAZER;
-        else if(this.statusTaskEnum == StatusTask.ESPERANDO) this.statusTaskEnum = StatusTask.TRABALHANDO;
-        else this.statusTaskEnum = StatusTask.ESPERANDO;
+        this.statusTaskEnum = StatusTask.regredir(this.statusTaskEnum);
 
     }
 
     public String toString(){
-        return "Task [name="+this.name+", statusTaskEnum="+statusTaskEnum.toString()+"]";
+        return "Task [id="+this.id+", name="+this.name+", statusTaskEnum="+statusTaskEnum.toString()+"] \n";
     }
 }

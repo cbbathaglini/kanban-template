@@ -1,2 +1,7 @@
-src\main\java\br\com\kanban\StatusTask.class
-src\main\java\br\com\kanban\Task.class
+br\com\kanban\model\Task.class
+Main.class
+br\com\kanban\config\Database.class
+br\com\kanban\model\StatusTask.class
+br\com\kanban\repository\TaskRepository.class
+br\com\kanban\config\DatabaseConfigs.class
+br\com\kanban\service\TaskService.class
